@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: javajava-java-sample-qosb
+  namespace: e2e-demos-wdui-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images-protected@sha256:ae1b6e631ed8c4cf7d819bac421162914abe5f1dbdc4a46b6a7b956268103285
+        name: my-java-springboot
+        resources: {}
+status: {}
